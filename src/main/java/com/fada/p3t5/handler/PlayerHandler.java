@@ -18,11 +18,11 @@ public class PlayerHandler {
 
     public Mono<ServerResponse> createPlayer(ServerRequest request) {
         return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromPublisher(request.bodyToMono(Player.class).flatMap(playerRepository::save),Player.class));
+                .body(BodyInserters.fromPublisher(request.bodyToMono(Player.class).flatMap(playerRepository::save), Player.class));
     }
 
     public Mono<ServerResponse> getAllPlayers(ServerRequest request) {
         return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromPublisher(playerRepository.findAll(),Player.class));
+                .body(BodyInserters.fromPublisher(playerRepository.findAll(), Player.class));
     }
 }

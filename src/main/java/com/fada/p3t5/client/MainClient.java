@@ -33,10 +33,10 @@ public class MainClient {
                 .map(Greeting::getMessage);
     }
 
-    public Player createPlayer(Player player){
+    public Mono<Player> createPlayer(Player player){
         log.info("vmi");
 
-        return this.client.post().uri("/createPlayer").accept(MediaType.APPLICATION_JSON).body(Mono.just(player),Player.class).retrieve().bodyToMono(Player.class).block();
+        return this.client.post().uri("/createPlayer").accept(MediaType.APPLICATION_JSON).body(Mono.just(player),Player.class).retrieve().bodyToMono(Player.class);
     }
 
     public Flux<Player> getAllPlayers(){
