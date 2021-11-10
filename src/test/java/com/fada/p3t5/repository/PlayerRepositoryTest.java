@@ -23,13 +23,13 @@ class PlayerRepositoryTest {
     
     @Test
     public void givenValue_whenfindAllByName_thenFindPlayer() {
-        repository.save(new Player(null, "Bill", "Sdada")).block();
-        Flux<Player> PlayerFlux = repository.findAllByName("Bill");
+        repository.save(new Player(null, "Billy", "Sdada")).block();
+        Flux<Player> PlayerFlux = repository.findAllByName("Billy");
 
         StepVerifier
                 .create(PlayerFlux)
                 .assertNext(Player -> {
-                    assertEquals("Bill", Player.getName());
+                    assertEquals("Billy", Player.getName());
                     assertEquals("Sdada", Player.getApiKey());
                     assertNotNull(Player.getId());
                 })
@@ -41,7 +41,7 @@ class PlayerRepositoryTest {
     public void givenOwner_whenFindFirstByOwner_thenFindPlayer() {
         repository.save(new Player(null, "Bill", "Sdada")).block();
         Mono<Player> PlayerMono = repository
-                .findFirstByApiKey(Mono.just("Bill"));
+                .findFirstByApiKey(Mono.just("Sdada"));
 
         StepVerifier
                 .create(PlayerMono)

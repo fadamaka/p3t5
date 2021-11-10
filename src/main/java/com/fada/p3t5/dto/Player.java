@@ -12,6 +12,6 @@ public class Player {
 
     @Id
     private String id;
-    private String Name;
+    private String name;
     private String apiKey;
 }
