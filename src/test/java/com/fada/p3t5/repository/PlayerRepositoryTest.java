@@ -2,8 +2,7 @@ package com.fada.p3t5.repository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.fada.p3t5.Project3T5Application;
-import com.fada.p3t5.dto.Player;
+import com.fada.p3t5.domain.Player;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

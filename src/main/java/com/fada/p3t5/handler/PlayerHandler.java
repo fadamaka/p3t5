@@ -1,6 +1,6 @@
 package com.fada.p3t5.handler;
 
-import com.fada.p3t5.dto.Player;
+import com.fada.p3t5.domain.Player;
 import com.fada.p3t5.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

@@ -1,11 +1,9 @@
 package com.fada.p3t5.router;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.fada.p3t5.dto.Greeting;
-import com.fada.p3t5.dto.Player;
+import com.fada.p3t5.domain.Greeting;
+import com.fada.p3t5.domain.Player;
 import com.fada.p3t5.repository.PlayerRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

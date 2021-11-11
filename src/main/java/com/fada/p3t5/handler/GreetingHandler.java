@@ -1,6 +1,6 @@
 package com.fada.p3t5.handler;
 
-import com.fada.p3t5.dto.Greeting;
+import com.fada.p3t5.domain.Greeting;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.BodyInserters;

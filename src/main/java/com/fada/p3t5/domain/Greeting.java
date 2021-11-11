@@ -1,4 +1,4 @@
-package com.fada.p3t5.dto;
+package com.fada.p3t5.domain;
 
 public class Greeting {
 

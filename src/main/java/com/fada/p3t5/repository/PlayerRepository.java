@@ -1,6 +1,6 @@
 package com.fada.p3t5.repository;
 
-import com.fada.p3t5.dto.Player;
+import com.fada.p3t5.domain.Player;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;

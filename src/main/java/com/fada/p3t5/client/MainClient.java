@@ -1,7 +1,7 @@
 package com.fada.p3t5.client;
 
-import com.fada.p3t5.dto.Greeting;
-import com.fada.p3t5.dto.Player;
+import com.fada.p3t5.domain.Greeting;
+import com.fada.p3t5.domain.Player;
 import com.fada.p3t5.repository.PlayerRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,5 @@
-package com.fada.p3t5.dto;
+package com.fada.p3t5.domain;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,10 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @Data
 @AllArgsConstructor
-public class Player {
+public class Match {
 
     @Id
-    private String id;
-    private String name;
-    private String apiKey;
+    String id;
+    Player playerOne;
+    Player playerTwo;
+    MatchStatus status;
+    MatchData matchData;
 }
